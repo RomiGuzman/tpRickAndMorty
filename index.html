@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final: Rick and Morty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7a7994a2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/rick and morty.png" alt="Rick and Morty">
+        </div>
+        <div class="nombre">
+            <img src="./img/nombre.png" alt="Rick and Morty">
+        </div>
+        <div class="nav-bar">
+            <ul class="menu">
+                <li id="todos">Todos</li>
+                <li id="mujeres">Mujeres</li>
+                <li id="hombres">Hombres</li>
+                <li id="sinGenero">Sin genero</li>
+                <li id="noSeSabe">No se sabe</li>
+            </ul>
+        </div>
+        <div class="navbar-cel">
+            <ul class="menu">
+                <li>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <ul class="sub-menu">
+                        <li id="todos">Todos</li>
+                        <li id="mujeres">Mujeres</li>
+                        <li id="hombres">Hombres</li>
+                        <li id="sinGenero">Sin genero</li>
+                        <li id="noSeSabe">No se sabe</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <p id="total">Total de personajes: <span id="total-personajes"></span></p>
+        <div id="raiz"></div>
+
+        <div class="container-paginador">
+            <p>Pagina actual: <span id="pagina-actual"></span></p>
+            <p>Total de páginas: <span id="total-paginas"></span></p>
+
+            <div class="pagination">
+                <button id="first-page"><i class="fa-solid pagination-icons fa-backward"></i></button>
+                <button id="prev-page"><i class="fa-solid pagination-icons fa-circle-left"></i></button>
+                <button id="next-page"><i class="fa-solid pagination-icons fa-circle-right"></i></button>
+                <button id="last-page"><i class="fa-solid pagination-icons fa-forward"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <img src="./img/nombre.png" alt="Rick and Morty">
+        </div>
+        <div class="derechos">
+            <h4>Derecho de autor del proyecto:</h4>
+            <p>Estudiante de ADA Romina Guzman</p>
+        </div>
+    </footer>
+
+    <script src="./js/logica.js"></script>
+</body>
+
+</html>

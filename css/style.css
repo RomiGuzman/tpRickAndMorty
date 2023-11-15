@@ -1,0 +1,316 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #1C8087;
+}
+
+header {
+    background-color: #a7c957;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 15px;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover {
+    transform: scale(1.2);
+}
+
+header .nombre {
+    cursor: pointer;
+    margin-right: auto;
+    padding: 15px;
+}
+
+header .nombre img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .nombre img:hover {
+    transform: scale(1.2);
+}
+
+header .menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+header .menu li {
+    display: block;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 600;
+    color: #000000;
+    padding: 0 20px;
+}
+
+header .menu li:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+    background-color: #1C8087;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #ffffff;
+    transition: ease-in .4s;
+}
+
+header .navbar-cel {
+    display: none;
+}
+
+header .sub-menu {
+    display: none;
+    position: absolute;
+}
+
+header .sub-menu li {
+    display: block;
+}
+
+header .menu>li:hover .sub-menu {
+    display: block;
+}
+
+main {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+main #total {
+    text-align: center;
+    color: #ffffff;
+}
+
+main #raiz {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .card-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    border: 4px solid #a7c957;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #ffffff;
+    transition: all 0.3s;
+}
+
+main .card-container:hover {
+    transform: scale(1.1);
+    border-color: #000000;
+    background-color: #a7c957;
+}
+
+main .card {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+}
+
+main .card-image {
+    display: flex;
+    justify-content: center;
+}
+
+main .card-image img {
+    width: 250px;
+    margin-top: 15px;
+    border: 4px solid #a7c957;
+    box-shadow: 0px 0px 15px #ffffff;
+    border-radius: 20px;
+}
+
+main .card-image img:hover {
+    border: 4px solid #000000;
+    box-shadow: 0px 0px 15px #ffffff;
+    border-radius: 30px;
+}
+
+main .card-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 25px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+main .card-content h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+main .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border: 4px solid #a7c957;
+    background-color: #000000;
+    box-shadow: 0px 0px 15px #ffffff;
+    width: 100px;
+    border-radius: 8px;
+}
+
+main .btn:hover {
+    border: 4px solid #ffffff;
+}
+
+main .btn a {
+    text-decoration: none;
+    color: #a7c957;
+}
+
+main .btn a:hover {
+    color: #ffffff;
+}
+
+main .container-paginador {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 600;
+}
+
+main .pagination {
+    margin-top: 15px;
+}
+
+main .pagination button {
+    cursor: pointer;
+    background-color: #a7c957;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+main .pagination button:hover {
+    border: 2px solid #ffffff;
+    background-color: #000000;
+}
+
+main .pagination .pagination-icons {
+    width: 20px;
+    height: 20px;
+    margin: 10px 12px;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main .pagination .pagination-icons:hover {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #a7c957;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer .derechos {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        display: none;
+    }
+
+    header .nombre {
+        display: none;
+    }
+
+    header .navbar-cel {
+        display: flex;
+    }
+
+    header .sub-menu li {
+        width: 80vw;
+        margin-bottom: 4px;
+        text-align: center;
+        background-color: #a7c957;
+        border: 2px solid #000000;
+    }
+   
+    header .menu i {
+        color: #1C8087;
+    }
+
+    header .menu i:hover {
+        color: #ffffff;
+    }
+
+    header .nav-bar {
+        display: none;
+    }
+
+    main .card-container:hover {
+        border-color: #ffffff;
+        background-color: #a7c957;
+    }
+
+    main .card-image img:hover {
+        border: 4px solid #ffffff;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .nombre {
+        display: flex;
+        margin: 0px auto;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+}
